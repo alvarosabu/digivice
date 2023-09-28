@@ -6,10 +6,6 @@ const props = defineProps<{
   digimon: Digimon
 }>()
 
-watchEffect(() => {
-  console.log(props.digimon)
-})
-
 function getClass(stat, condition) {
   let classes = 'p-1 rounded text-xs '
   if (condition) {

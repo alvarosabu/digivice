@@ -18,8 +18,11 @@ const { slug } = route.params
 
 const { data: partner } = await useAsyncData('partners', () => queryContent(route.path).findOne())
 
-const { data: digimon } = await useFetch(`/api/${partner.value.specie}`)
-const isDigimonDataReady = ref(false)
+/* const { data: digimon } = await useFetch(`/api/${partner.value.specie}`)
+const isDigimonDataReady = ref(false) */
+
+const { data: digimon } = await useAsyncData('digimons', 
+  () => queryContent(`digimons/${partner?.value?.specie}`).findOne())
 
 useHead({
   title: partner.value.name,
@@ -81,7 +84,6 @@ const evolutionChart = chart.map(({ data }) => data.value).filter(Boolean)
       </div>
       <NuxtImg
         v-else
-        provider="netlify"
         class="w-350px mb-8"
         :src="partner.thumbnail"
         :alt="partner.name"

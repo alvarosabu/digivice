@@ -177,7 +177,9 @@ export default defineEventHandler(async (event) => {
       evolvesTo,
     }
 
-    saveToMarkdown(slug, digimonData)
+    if (digimonData && slug) {
+      saveToMarkdown(slug, digimonData)
+    }
 
     return digimonData
   }
