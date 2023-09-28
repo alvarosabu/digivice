@@ -39,12 +39,12 @@ useHead({
 })
 
 const evolvesTo = await Promise.all(digimon.value.evolvesTo
-  .map(async ({ slug }) => await useFetch(`/api/${slug}`)))
+  .map(async ({ slug }) => queryContent(`digimons/${slug}`)))
  
 digimon.value.evolvesTo = evolvesTo.map(({ data }) => data.value).filter(Boolean)
 
 const chart = await Promise.all(partner.value.chart
-  .map(async slug => await useFetch(`/api/${slug}`)))
+  .map(async slug => queryContent(`digimons/${slug}`)))
 
 const evolutionChart = chart.map(({ data }) => data.value).filter(Boolean)
 </script>
