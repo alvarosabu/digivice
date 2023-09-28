@@ -63,7 +63,7 @@ const hasEvolutionConditions = computed(() => !digimon.value.stage.includes('In-
   >
     <section class="border p-4 rounded flex justify-between">
       <NuxtImg
-        provider="netlify"
+        
         class="mb-4"
         :src="digimon.icon"
         :alt="digimon.name"
@@ -113,7 +113,7 @@ const hasEvolutionConditions = computed(() => !digimon.value.stage.includes('In-
       >
         <template #sprite-data="{ row }">
           <NuxtImg
-            provider="netlify"
+            
             class="w-8"
             :src="row.sprite"
             :alt="row.name"
@@ -121,7 +121,7 @@ const hasEvolutionConditions = computed(() => !digimon.value.stage.includes('In-
         </template>
         <template #icon-data="{ row }">
           <NuxtImg
-            provider="netlify"
+            
             class="w-8"
             :src="row.icon"
             :alt="row.name"
@@ -155,7 +155,7 @@ const hasEvolutionConditions = computed(() => !digimon.value.stage.includes('In-
       >
         <template #sprite-data="{ row }">
           <NuxtImg
-            provider="netlify"
+            
             class="w-8"
             :src="row.sprite"
             :alt="row.name"
@@ -163,7 +163,7 @@ const hasEvolutionConditions = computed(() => !digimon.value.stage.includes('In-
         </template>
         <template #icon-data="{ row }">
           <NuxtImg
-            provider="netlify"
+            
             class="w-8"
             :src="row.icon"
             :alt="row.name"
