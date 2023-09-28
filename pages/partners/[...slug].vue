@@ -81,6 +81,7 @@ const evolutionChart = chart.map(({ data }) => data.value).filter(Boolean)
       </div>
       <NuxtImg
         v-else
+        provider="netlify"
         class="w-350px mb-8"
         :src="partner.thumbnail"
         :alt="partner.name"

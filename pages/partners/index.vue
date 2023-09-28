@@ -25,6 +25,7 @@ const { data: partners } = await useAsyncData('/partners', () => queryContent('/
           :class="{ 'bg-lime-50 border-lime-200 text-lime-500': $index < 2 }"
         >
           <NuxtImg
+            provider="netlify"
             class="w-32"
             :src="partner.thumbnail"
             :alt="partner.name"
