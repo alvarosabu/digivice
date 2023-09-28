@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Zed Mono';
+    src: url('/fonts/zed-mono-regular.tff') format('tff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Zed Mono';
+    src: url('/fonts/zed-mono-bold.tff') format('tff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Zed Mono';
+    src: url('/fonts/zed-mono-italic.tff') format('tff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Zed Mono';
+    src: url('/fonts/zed-mono-bold-italic.tff') format('tff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Zed Mono';
+    src: url('/fonts/zed-mono-light.tff') format('tff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Zed Mono';
+    src: url('/fonts/zed-mono-light-italic.tff') format('tff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  * {
+    font-family: 'Zed Mono', monospace;
+  }
