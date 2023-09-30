@@ -14,7 +14,7 @@ const { data: partners } = await useAsyncData('/partners', () => queryContent('/
     as="main"
     :ui="{ constrained: 'max-w-5xl' }"
   >
-    <section class="grid grid-cols-1 md:gid-cols-4 gap-8 py-8">
+    <section class="grid grid-cols-1 sm:grid-cols-3 gap-8 py-8">
       <NuxtLink
         v-for="(partner, $index) in partners"
         :key="partner.slug"
